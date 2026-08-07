@@ -65,6 +65,8 @@ All three outputs show the first 10 elements of vector Z for each kernel, whethe
 # DEMO VIDEO
 VIEW HERE: https://youtu.be/Ts5uCkCq-qI
 
+! Important Note: _The file was too big even split in two parts. Hence, we resorted to uploading it as an unlisted YouTube video. We hope this could be considered!_
+
 ## IMPORTANT: HOW TO COMPILE AND RUN
 **Notes:**
 * Please make sure you're in the SAXPY_Project directory.
