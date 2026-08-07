@@ -17,7 +17,12 @@ Z[i] = A•X[i] + Y[i]
 
 **Example:**
 A -> 2.0
+
 x -> 1.0, 2.0, 3.0
+
 y - 11.0, 12.0, 13.0
-(answer) z-> 13.0, 16.0, 19.0
-Output: store result in vector Z. Display the result of 1st ten elements of vector Z for all versions of kernel (i.e., C and x86-64).
+
+**_(answer) z -> 13.0, 16.0, 19.0_**
+
+**Output:** 
+Store result in vector Z. Display the result of 1st ten elements of vector Z for all versions of kernel (i.e., C and x86-64).
