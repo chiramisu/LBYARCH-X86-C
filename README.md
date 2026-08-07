@@ -37,7 +37,23 @@ Store result in vector Z. Display the result of 1st ten elements of vector Z for
 6. You will need to check the correctness of your output. Thus, if the C version is your "sanity check answer key," then the output of the x86-64 version has to be checked with the C version and output correspondingly (i.e., the x86-64 kernel output is correct, etc.).
 
 # COMPARATIVE EXECUTION TIME AND SHORT ANALYSIS OF PERFORMANCE
-text and images too maybe
+The C and x86-64 assembly implementations of the SAXPY kernel were tested using three different vector sizes. Each kernel was executed 30 times for every vector size, and the average execution time was recorded.
+
+| Vector Size | C Average Time (s) | x86-64 ASM Average Time (s) | Speedup (C / ASM) |
+|---|---:|---:|---:|
+| 2^20 (1,048,576) | 0.00145 | 0.00038 | 3.82x |
+| 2^24 (16,777,216) | 0.02398 | 0.00821 | 2.92x |
+| 2^28 (268,435,456) | 0.38690 | 0.13501 | 2.87x |
+
+### Performance Analysis
+
+The x86-64 assembly implementation was faster than the C implementation for all three tested vector sizes. For a vector size of 2^20, the assembly kernel was approximately 3.82 times faster than the C kernel. For 2^24, it was approximately 2.92 times faster, while for 2^28, it was approximately 2.87 times faster.
+
+As the vector size increased, the execution time of both implementations also increased because a larger number of elements had to be processed. The x86-64 implementation consistently required less execution time than the C implementation during our tests.
+
+The speedup became slightly smaller as the vector size increased. One possible reason is that larger vectors require more memory access. As the amount of data increases, memory access and cache behavior can have a greater effect on the total execution time, rather than the arithmetic instructions alone.
+
+Despite the difference in execution time, both implementations produced the same output. The correctness check passed for all tested vector sizes, confirming that the x86-64 assembly implementation produced results equivalent to the C implementation.
 
 # PROGRAM OUTPUT - ASM IMPLEMENTATION
 hyperlink image and text desc
