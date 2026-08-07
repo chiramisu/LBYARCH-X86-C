@@ -28,6 +28,14 @@ y - 11.0, 12.0, 13.0
 **Output:** 
 Store result in vector Z. Display the result of 1st ten elements of vector Z for all versions of kernel (i.e., C and x86-64).
 
+**Note:**
+1. Write a C main program to call the kernels of the C version and x86-64 assembly language.
+2. Time the kernel portion only.
+3. For each kernel version, time the process for vector size n = {2^20, 2^24, and 2^30}. If 2^30 is impossible, you may reduce it to the point your machine can support (i.e., 2^28 or 2^29).
+4. You must run at least 30 times for each version to get the average execution time.
+5. For the data, you may initialize each vector and scalar variable with the same or different random value.
+6. You will need to check the correctness of your output. Thus, if the C version is your "sanity check answer key," then the output of the x86-64 version has to be checked with the C version and output correspondingly (i.e., the x86-64 kernel output is correct, etc.).
+
 # COMPARATIVE EXECUTION TIME AND SHORT ANALYSIS OF PERFORMANCE
 text
 # PROGRAM OUTPUT - ASM IMPLEMENTATION
