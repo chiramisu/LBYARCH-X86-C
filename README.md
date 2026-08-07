@@ -63,7 +63,7 @@ Despite the difference in execution time, both implementations produced the same
 All three outputs show the first 10 elements of vector Z for each kernel, whether it passed the correctness check, and the average time for each implementation.
 
 # DEMO VIDEO
-hyperlink video
+VIEW HERE: https://youtu.be/Ts5uCkCq-qI
 
 ## IMPORTANT: HOW TO COMPILE AND RUN
 **Notes:**
