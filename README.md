@@ -4,6 +4,39 @@
 * Dimaunahan, Chelsea
 * Pascual, Jaica
 
+## IMPORTANT: HOW TO COMPILE AND RUN
+**Notes:**
+* Please make sure you're in the SAXPY_Project directory.
+* saxpy_asm.asm uses MASM syntax and must be assembled using `ml64`. It cannot be compiled directly with `gcc`.
+
+**ALL FILES ARE ALREADY AVAILABLE IN THE SAXPY_Project FOLDER. Proceed to Step 3 if you want to run the program.**
+
+### Step 1 - ASM Implementation
+
+The **.asm** file was assembled using the x64 Native Tools Command Prompt with the command:
+
+`ml64 /c saxpy_asm.asm`
+
+which created the **_saxpy_asm.obj_** file
+
+
+### Step 2 - C Implementation
+
+The C files were compiled one by one:
+
+`gcc -c saxpy_c.c`
+
+`gcc -c main.c`
+
+which created the **_main.o_** and **_saxpy_c.o_** files
+
+### Step 3 - Running the Program
+
+Linking everything, to make the program run, input in the Command Prompt the following command:
+
+`gcc main.o saxpy_c.o saxpy_asm.obj -o main.exe`
+
+
 ## PROJECT SPECIFICATIONS
 Write the kernel in (1) C program and (2) an x86-64 assembly language. The kernel is to perform the SAXPY (A*X + Y) function.
 * Required to use functional scalar SIMD registers
