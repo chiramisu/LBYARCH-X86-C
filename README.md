@@ -16,6 +16,7 @@ Scalar variable n (integer) contains the length of the vector; Scalar variable A
 Z[i] = A•X[i] + Y[i]
 
 **Example:**
+
 A -> 2.0
 
 x -> 1.0, 2.0, 3.0
