@@ -29,11 +29,9 @@ y - 11.0, 12.0, 13.0
 Store result in vector Z. Display the result of 1st ten elements of vector Z for all versions of kernel (i.e., C and x86-64).
 
 # COMPARATIVE EXECUTION TIME AND SHORT ANALYSIS OF PERFORMANCE
-text
-# PROGRAM OUTPUT - ASM IMPLEMENTATION
-hyperlink image and text desc
+text and images too maybe
 
-# PROGRAM OUTPUT - C IMPLEMENTATION
+# PROGRAM OUTPUT - ASM IMPLEMENTATION
 hyperlink image and text desc
 
 # DEMO VIDEO
