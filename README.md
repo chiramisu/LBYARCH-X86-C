@@ -39,8 +39,12 @@ Store result in vector Z. Display the result of 1st ten elements of vector Z for
 # COMPARATIVE EXECUTION TIME AND SHORT ANALYSIS OF PERFORMANCE
 text and images too maybe
 
-# PROGRAM OUTPUT - ASM IMPLEMENTATION
-hyperlink image and text desc
+# PROGRAM OUTPUT
+![First output for vector size 2^20](/assets/firstOutput.jpeg)
+![Second output for vector size 2^24](/assets/secondOutput.jpeg)
+![Third output for vector size 2^28](/assets/thirdOutput.jpeg)
+
+All three outputs show the first 10 elements of vector Z for each kernel, whether it passed the correctness check, and the average time for each implementation.
 
 # DEMO VIDEO
 hyperlink video
