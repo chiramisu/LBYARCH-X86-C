@@ -52,8 +52,8 @@ int main(void) {
 
     // malloc check if it failed or not
     if (X == NULL || Y == NULL || Z_c == NULL || Z_asm == NULL) {
-    printf("Memory allocation failed for n = %d\n", n);
-    return 1;
+        printf("Memory allocation failed for n = %d\n", n);
+        return 1;
     }
 
     // fill input vectors with values
