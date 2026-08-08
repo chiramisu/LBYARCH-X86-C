@@ -1,3 +1,5 @@
+PUBLIC saxpy_asm
+
 .code
 
 saxpy_asm PROC
